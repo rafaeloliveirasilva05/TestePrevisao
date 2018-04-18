@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="100dp"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:orientation="vertical"
+    >
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Forecast for:"
+            android:textSize="20sp"
+            android:paddingTop="8dp"
+            android:textColor="@android:color/background_dark"
+            />
+
+        <TextView
+            android:id="@+id/list_item_data"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="date"
+            android:paddingLeft="8dp"
+            android:textSize="15sp"
+            android:textColor="@android:color/background_dark"
+            />
+
+        <TextView
+            android:id="@+id/list_item_day"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="day"
+            android:paddingLeft="8dp"
+            android:textSize="15sp"
+            android:textColor="@android:color/background_dark"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Maximum:"
+            android:textSize="20sp"
+            android:textColor="@android:color/background_dark"
+            />
+        <TextView
+            android:id="@+id/list_item_high"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="tempoMin"
+            android:textSize="15sp"
+            android:paddingLeft="8dp"
+            android:textColor="@android:color/background_dark"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingBottom="8dp"
+        >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Minimun:"
+            android:textSize="20dp"
+            android:textColor="@android:color/background_dark"/>
+
+        <TextView
+            android:id="@+id/list_item_low"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="tempoMax"
+            android:textSize="15dp"
+            android:paddingLeft="8dp"
+            android:textColor="@android:color/background_dark"
+            />
+    </LinearLayout>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:background="@color/colorPrimary"
+        android:focusable="false"
+        />
+
+</LinearLayout>
